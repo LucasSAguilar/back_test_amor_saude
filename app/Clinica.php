@@ -20,5 +20,5 @@ class Clinica extends Model
         'ativa' => 'boolean',
         'data_inauguracao' => 'date',
         'especialidades' => 'array',
-    ];
+    ];  
 }
