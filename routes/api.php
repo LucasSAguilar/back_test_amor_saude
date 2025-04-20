@@ -21,3 +21,6 @@ Route::group(['prefix' => 'clinicas'], function () {
     Route::put('/{id}', 'ClinicaController@update'); // Atualizar clínica
     Route::delete('/{id}', 'ClinicaController@destroy'); // Deletar clínica
 });
+Route::group(['prefix' => 'auth'], function () {
+    Route::post('/', 'AuthController@login'); // Realizar login
+});
